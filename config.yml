@@ -1,0 +1,9 @@
+logs:
+  app:
+    driver: zap
+    stdout: true
+    formatter: plain
+    level: info
+    enable_file_line: true
+    path: /tmp/app.accesslog
+    default: true

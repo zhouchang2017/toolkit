@@ -3,7 +3,7 @@ package redisconfig
 import (
 	"fmt"
 	"github.com/go-redis/redis/v8"
-	"toolkit/log"
+	"github.com/zhouchang2017/toolkit/log"
 )
 
 var (

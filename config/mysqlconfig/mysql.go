@@ -3,9 +3,9 @@ package mysqlconfig
 import (
 	"database/sql"
 	_ "github.com/go-sql-driver/mysql"
+	"github.com/zhouchang2017/toolkit/log"
 	"net/url"
 	"strings"
-	"toolkit/log"
 )
 
 var (

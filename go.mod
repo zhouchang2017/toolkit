@@ -1,4 +1,4 @@
-module toolkit
+module github.com/zhouchang2017/toolkit
 
 go 1.13
 

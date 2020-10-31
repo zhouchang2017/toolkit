@@ -9,7 +9,7 @@ import (
 	"time"
 
 	rotatelogsbytime "github.com/patch-mirrors/file-rotatelogs"
-	"toolkit/log"
+	"github.com/zhouchang2017/toolkit/log"
 
 	rotators "gopkg.in/natefinch/lumberjack.v2"
 )

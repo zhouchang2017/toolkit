@@ -2,12 +2,12 @@ package log
 
 import (
 	"fmt"
+	"github.com/zhouchang2017/toolkit/log/zapformatter"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 	"io"
 	"os"
 	"sync"
-	"toolkit/log/zapformatter"
 )
 
 var (

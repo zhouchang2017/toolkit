@@ -2,6 +2,7 @@ package mysqlconfig
 
 import (
 	"database/sql"
+	"fmt"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/zhouchang2017/toolkit/log"
 	"net/url"
@@ -11,6 +12,13 @@ import (
 var (
 	instances = map[string]*sql.DB{}
 )
+
+func Get(dbHandler string) (*sql.DB, error) {
+	if db, ok := instances[dbHandler]; ok {
+		return db, nil
+	}
+	return nil, fmt.Errorf("DBHandler[%s] not found", dbHandler)
+}
 
 type Configs map[string]Config
 
